@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 30px 15px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 5rem;
+}
+
+.navbar-menu-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-menu-a {
+    color: #FF6060;
+    text-decoration: none;
+}

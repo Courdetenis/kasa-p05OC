@@ -1,0 +1,15 @@
+::root {
+  --red: #ff6060;
+  --lightgrey: #F6F6F6;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  border: 1px solid red;
+  padding-inline: 100px;
+}

@@ -1,0 +1,11 @@
+.appart-container {
+   display: flex;
+   min-height: 50vh;
+   flex-wrap: wrap;
+   border-radius: 25px;
+   background-color: lightgrey;
+   gap: 10px;
+   padding: 20px;
+   justify-content: space-between;
+   margin-top: 35px;
+}
