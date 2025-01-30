@@ -7,9 +7,6 @@ function AppartContainer() {
     <>
       <div className="appart-container">
         <AppartCard />
-        <AppartCard />
-        <AppartCard />
-        <AppartCard />
       </div>
     </>
   );

@@ -1,0 +1,99 @@
+.appart {
+    color: #ff6060;
+}
+
+.appart img {
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.appart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appart-owner-details {
+    display: flex;
+    gap: 10px;
+}
+
+.appart-owner-name {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0;
+}
+
+.appart-description-header {
+    background-color:#ff6060;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appart-area {
+    display: flex;
+    gap: 76px;
+}
+
+.appart-description-header i {
+    cursor: pointer;
+}
+
+.appart-description-content {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    margin-top: 0;
+}
+
+.appart-owner-profile-picture {
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    justify-content: flex-end;
+}
+
+.appart h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.appart h2 {
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    margin-top: 0;
+}
+
+.appart-tag {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.appart-tag span {
+    gap: 10px;
+    background-color: #ff6060;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    width: 115px;
+    text-align: center;
+}
+
+@media screen and (width <= 768px) {
+    .appart-header {
+        flex-direction:column;
+    }    
+}
