@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import Banner from "./layout/Banner.jsx";
 import AppartContainer from "./components/AppartContainer.jsx";
 
