@@ -1,13 +1,10 @@
 import React from "react";
-import "./About.css";
-import Header from "./Header.jsx";
-import Footer from "./Footer.jsx";
+import "./About.scss";
 import { NavLink } from "react-router";
 
 function About() {
   return (
     <>
-      <Header />
       <main>
         <div className="banner-about">
           <img src="https://picsum.photos/800/400" alt="Image test" />
@@ -63,7 +60,6 @@ function About() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

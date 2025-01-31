@@ -1,0 +1,26 @@
+@use '../color/Color.scss' as *;
+
+.banner {
+   position: relative;
+   height: 25vh;
+   max-width: 100%;
+   display: flex;
+   margin: auto;
+   border-radius: 25px;
+   align-items: center;
+   justify-content: center;
+   &::before {
+      content: "";
+      background-size: cover;
+      background-image: url("banner-background.jpg");
+      position: absolute;
+      inset: 0;
+      background-position: center;
+      border-radius: 25px;
+      background-color: rgba(0, 0, 0, 0.80);
+   }
+   & h1 {
+      color: white;
+      position: relative;
+   }
+}

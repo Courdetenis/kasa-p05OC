@@ -1,5 +1,5 @@
 import React from "react";
-import "./AppartContainer.css";
+import "./AppartContainer.scss";
 import AppartCard from "./AppartCard.jsx";
 
 function AppartContainer() {

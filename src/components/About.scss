@@ -1,0 +1,39 @@
+@use '../color/Color.scss' as *;
+
+.banner-about { 
+    & img {
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-part {
+    width: 75%;
+}
+
+.about-part-title {
+    background-color: $background-color-1;
+    color: $color-1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-part-content {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $background-color-2;
+    margin-top: 0;
+}

@@ -1,13 +1,10 @@
 import React from "react";
-import Header from "./Header.jsx";
-import "./ErrorPage.css";
-import Footer from "./Footer.jsx";
+import "./ErrorPage.scss";
 import { NavLink } from "react-router";
 
 function ErrorPage() {
   return (
     <div>
-      <Header />
       <main>
         <div className="error-container">
           <h1 className="h1-error">404</h1>
@@ -19,7 +16,6 @@ function ErrorPage() {
           </NavLink>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

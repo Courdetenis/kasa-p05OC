@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { data, NavLink } from "react-router-dom";
 import logementsData from "/src/logements.json";
-import "./AppartCard.css";
+import "./AppartCard.scss";
 
 function AppartCard() {
   return (

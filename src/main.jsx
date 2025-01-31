@@ -4,8 +4,8 @@ import App from "./App.jsx";
 import ErrorPage from "./components/ErrorPage.jsx";
 import About from "./components/About.jsx";
 import Appart from "./components/Appart.jsx";
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
+import Header from "./layout/Header.jsx";
+import Footer from "./layout/Footer.jsx";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 createRoot(document.getElementById("root")).render(

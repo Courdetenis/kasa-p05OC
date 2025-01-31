@@ -1,5 +1,5 @@
 import React from "react";
-import "./Appart.css";
+import "./Appart.scss";
 import { useParams } from "react-router";
 
 function Appart() {
