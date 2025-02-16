@@ -1,27 +1,50 @@
 @use "../color/Color.scss" as *;
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 30px 30px 15px;
-}
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px; // Réduit de 40px à 30px
 
-.navbar-menu {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
+  @media screen and (max-width: 768px) {
+    padding: 15px 20px; // Réduit de 20px à 15px
+  }
+
+  img {
+    height: 50px; // Réduit de 68px à 50px
+
+    @media screen and (max-width: 768px) {
+      height: 40px; // Réduit de 47px à 40px
+    }
+  }
 }
 
 .navbar-menu-list {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  gap: 57px;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width: 768px) {
+    gap: 26px;
+  }
 }
 
 .navbar-menu-navlink {
-    color: black;
-    text-decoration: none;
-    &:active {
-        text-decoration: underline;  
-    }
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &.active {
+    text-decoration: underline;
+  }
 }

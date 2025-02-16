@@ -20,6 +20,17 @@
     color: $background-color-1;
     margin-top: 5px;
   }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+  }
 }
 
 .appart-header {
@@ -27,6 +38,25 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 30px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 15px;
+  }
+}
+
+.appart-owner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .appart-owner-details {
@@ -34,48 +64,56 @@
   gap: 10px;
   align-items: center;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .appart-owner-name {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 0;
   color: $background-color-1;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
+  text-align: right;
+  margin-right: 10px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.appart-owner-profile-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-color: $background-color-2;
+
+  @media screen and (max-width: 768px) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .rating {
   display: flex;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 10px;
 
   .star-filled {
-    color: #ff6060;
-    font-size: 30px;
+    color: $background-color-1;
+    font-size: 24px;
   }
 
   .star-empty {
     color: #e3e3e3;
-    font-size: 30px;
-  }
-}
-
-.appart-description-header {
-  background-color: #ff6060;
-  color: white;
-  padding: 13px 20px;
-  border-radius: 10px;
-  margin-bottom: 2px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-  cursor: pointer;
-
-  i {
     font-size: 24px;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 5px;
+    .star-filled,
+    .star-empty { font-size: 15px; }
   }
 }
 
@@ -84,114 +122,37 @@
   gap: 76px;
   margin-top: 24px;
 
-  .appart-description {
-    flex: 1;
-    width: 50%;
-    max-width: 50%;
-  }
-}
-
-.appart-description-content {
-  padding: 30px 20px;
-  border-radius: 10px;
-  background-color: #f6f6f6;
-  margin-top: 0;
-  color: #ff6060;
-  font-size: 18px;
-  line-height: 1.5;
-  min-height: auto;
-
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.appart-owner-profile-picture {
-  width: 50px;
-  height: 50px;
-  background-color: $background-color-2;
-  border-radius: 50%;
-  justify-content: flex-end;
-}
-
-.appart {
-  & h1 {
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 0;
-  }
-  & h2 {
-    font-weight: 500;
-    font-size: 18px;
-    color: black;
-    margin-top: 0;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 16px;
   }
 }
 
 .appart-tag {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
-  & span {
+
+  span {
     background-color: $background-color-1;
     color: $color-1;
-    padding: 3px 30px;
+    padding: 5px 30px;
     border-radius: 10px;
     font-size: 14px;
+    font-weight: 500;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+      padding: 3px 15px;
+      border-radius: 5px;
+    }
   }
 }
 
-@media screen and (width <= 768px) {
-  .appart-header {
-    flex-direction: column;
-  }
-}
-
-.carousel {
-  position: relative;
-  width: 100%;
-  height: 415px;
-  border-radius: 25px;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 10px;
-
-    &.prev {
-      left: 20px;
-    }
-
-    &.next {
-      right: 20px;
-    }
-
-    i {
-      font-size: 4rem;
-    }
-  }
-
-  .carousel-counter {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 1.2rem;
-  }
+.equipment-list span {
+  display: block;
+  line-height: 1.7;
 }

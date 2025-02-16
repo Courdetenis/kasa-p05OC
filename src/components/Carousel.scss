@@ -1,0 +1,60 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+
+    &.prev {
+      left: 20px;
+    }
+
+    &.next {
+      right: 20px;
+    }
+
+    i {
+      font-size: 4rem;
+    }
+  }
+
+  .carousel-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 255px;
+
+    .carousel-btn {
+      i {
+        font-size: 20px;
+      }
+    }
+
+    .carousel-counter {
+      font-size: 14px;
+    }
+  }
+}

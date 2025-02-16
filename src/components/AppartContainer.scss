@@ -1,22 +1,15 @@
-@use '../color/Color.scss' as *;
+@use "../color/Color.scss" as *;
 
 .appart-container {
-   display: flex;
-   min-height: 50vh;
-   flex-wrap: wrap;
-   border-radius: 25px;
-   background-color: $background-color-2;
-   gap: 10px;
-   padding: 20px;
-   justify-content: space-between;
-   margin-top: 35px;
-}
+  display: flex;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  padding: 56px 50px;
+  margin-top: 43px;
 
-@media screen and (max-width: 768px) {
-   .appart-container {
-      background-color: white;
-      padding: 0;
-      justify-content: center;
-   }
-    
+  @media screen and (max-width: 768px) {
+    background-color: transparent;
+    padding: 0;
+    margin-top: 22px;
+  }
 }

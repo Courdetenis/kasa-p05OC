@@ -1,26 +1,32 @@
-@use '../color/Color.scss' as *;
+@use "../color/Color.scss" as *;
 
 .banner {
-   position: relative;
-   height: 25vh;
-   max-width: 100%;
-   display: flex;
-   margin: auto;
-   border-radius: 25px;
-   align-items: center;
-   justify-content: center;
-   &::before {
-      content: "";
-      background-size: cover;
-      background-image: url("banner-background.jpg");
-      position: absolute;
-      inset: 0;
-      background-position: center;
-      border-radius: 25px;
-      background-color: rgba(0, 0, 0, 0.80);
-   }
-   & h1 {
-      color: white;
-      position: relative;
-   }
+  height: 180px; // Réduit de 223px à 180px
+  border-radius: 25px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("banner-background.jpg") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 40px; // Réduit de 63px à 40px
+
+  @media screen and (max-width: 768px) {
+    height: 100px; // Réduit de 111px à 100px
+    margin-top: 16px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    padding: 0 20px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+      padding: 0 16px;
+    }
+  }
 }

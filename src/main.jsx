@@ -7,6 +7,7 @@ import Appart from "./components/Appart.jsx";
 import Header from "./layout/Header.jsx";
 import Footer from "./layout/Footer.jsx";
 import { BrowserRouter, Routes, Route } from "react-router";
+import "./main.scss";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
