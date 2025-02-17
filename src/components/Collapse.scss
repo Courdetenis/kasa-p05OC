@@ -1,10 +1,12 @@
+@use "../color/Color.scss" as *;
+
 .collapse {
   width: 100%;
   margin-bottom: 10px;
 
   &-title {
-    background-color: #ff6060;
-    color: white;
+    background-color: $background-color-1;
+    color: $color-1;
     padding: 10px 20px;
     border-radius: 5px;
     display: flex;
@@ -21,7 +23,7 @@
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: #f6f6f6;
+    background-color: $background-color-2;
     border-radius: 0 0 5px 5px;
     opacity: 0;
     transform: translateY(0);

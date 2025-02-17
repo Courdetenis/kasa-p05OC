@@ -10,7 +10,7 @@
   flex: 1;
 
   .error-number {
-    color: #ff6060;
+    color: $background-color-1;
     font-size: 288px;
     font-weight: 700;
     margin: 0;
@@ -23,7 +23,7 @@
   }
 
   .error-text {
-    color: #ff6060;
+    color: $background-color-1;
     font-size: 36px;
     margin: 40px 0;
     font-weight: 500;
@@ -41,7 +41,7 @@
     text-decoration: underline;
     margin-top: 100px;
     &:active {
-      color: #ff6060;
+      color: $background-color-1;
     }
 
     @media screen and (max-width: 768px) {

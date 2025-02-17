@@ -1,3 +1,5 @@
+@use "../color/Color.scss" as *;
+
 .carousel {
   position: relative;
   width: 100%;
@@ -17,7 +19,7 @@
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: white;
+    color: $color-1;
     font-size: 2rem;
     cursor: pointer;
     padding: 10px;
@@ -40,7 +42,7 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: $color-1;
     font-size: 1.2rem;
   }
 
